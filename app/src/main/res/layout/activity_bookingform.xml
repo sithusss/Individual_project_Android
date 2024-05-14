@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="Booking Details"
+        android:textColor="#3F51B5"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/booking_Hname"
+        android:layout_width="311dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Hotel Name"
+        android:inputType="text"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/booking_RoomType"
+        android:layout_width="307dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Room Type (Single bed/ Double bed)"
+        android:inputType="text"
+        android:textColor="#FFFEFE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_Hname" />
+
+    <EditText
+        android:id="@+id/no_OfRooms"
+        android:layout_width="304dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Number of Rooms"
+        android:inputType="number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/booking_RoomType" />
+
+    <Button
+        android:id="@+id/bookingbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Booking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_OfRooms" />
+
+    <TextView
+        android:id="@+id/shared_nic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIC: "
+        app:layout_constraintBottom_toTopOf="@+id/bookingbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/no_OfRooms" />
+</androidx.constraintlayout.widget.ConstraintLayout>
