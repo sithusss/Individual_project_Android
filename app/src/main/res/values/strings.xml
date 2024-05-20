@@ -80,5 +80,7 @@ Add the maggi masala on to it
 \nAdd the maggi masala on to it
 \nWait for 2 mins
 \nMaggi is ready!</string>
+    <string name="button">your bookings</string>
+    <string name="Search">search</string>
 
-    </resources>
+</resources>
